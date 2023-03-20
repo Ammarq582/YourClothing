@@ -1,0 +1,43 @@
+.button {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid black;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+    &.google {
+        background-color: rgb(66, 133, 244);
+        color: white;
+        border: none;
+
+        &:hover {
+            background-color: rgb(53, 122, 232);
+        }
+    }
+
+    &.inverted {
+        background-color: white;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}

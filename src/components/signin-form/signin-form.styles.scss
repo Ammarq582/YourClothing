@@ -1,0 +1,17 @@
+.signin-form-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .buttons-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+}

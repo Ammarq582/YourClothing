@@ -1,0 +1,17 @@
+.category-preview-container {
+    margin-top: 50px;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+
+        .title {
+            cursor: pointer;
+        }
+    }
+
+    .preview {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+}
