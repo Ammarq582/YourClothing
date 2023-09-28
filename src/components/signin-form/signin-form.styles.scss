@@ -1,7 +1,14 @@
 .signin-form-container {
+    max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-basis: 47%;
+
+    @media only screen and (max-width: 800px) {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
 
     h2 {
         margin-bottom: 10px;
@@ -12,6 +19,11 @@
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
+
+        @media only screen and (max-width: 450px) {
+            flex-direction: column;
+
+        }
     }
 
 }

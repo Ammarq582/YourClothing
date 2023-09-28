@@ -1,14 +1,35 @@
 .checkout-container {
-    width: 55%;
+    width: 800px;
     margin: 50px auto;
     min-height: 100vh;
 
+    @media only screen and (max-width: 900px) {
+        width: 500px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+
     .header {
+        font-size: 20px;
         width: 100%;
         display: flex;
         padding: 10px 0;
         justify-content: space-between;
         border-bottom: 1px solid darkgrey;
+
+        @media only screen and (max-width: 900px) {
+            font-size: 17px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            font-size: 15px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            font-size: 13px;
+        }
 
         span {
             width: 22.5%;

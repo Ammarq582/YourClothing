@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import CategoryPreview from "../../components/category-preview/category-preview.component";
 import { selectCategoriesIsLoading, selectCategoriesMap } from "../../store/categories/categories.selectors";
+import Spinner from "../../components/spinner/spinner.component";
 
 
 
@@ -12,7 +13,7 @@ const CategoriesContainer = () => {
             {
                 categoriesIsLoading
                 ?
-                <div>loading</div>
+                <Spinner/>
                 :
                 Object.keys(categoriesMap).map(title => {
                 const products = categoriesMap[title];

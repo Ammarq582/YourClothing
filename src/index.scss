@@ -4,6 +4,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+  }
 }
 
 code {

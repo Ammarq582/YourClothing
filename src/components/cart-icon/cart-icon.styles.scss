@@ -1,19 +1,31 @@
 .cart-icon-container {
+    margin-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 45px;
-    width: 45px;
+    height: 24px;
+    width: 24px;
     cursor: pointer;            
     svg {
-        height: 24px;
-        width: 24px;
+        height: 100%;
+        width: 100%;
     }
+
+    @media only screen and (max-width: 450px) {
+        margin-left: 10px;
+        height: 20px;
+        width: 20px;
+    }
+    
     .cart-count {
         position: absolute;
         font-size: 10px;
-        bottom: 12px;
+        bottom: 2px;
         font-weight: 600;
+
+        @media only screen and (max-width: 450px) {
+            font-size: 9px;
+        }   
     }
 }
