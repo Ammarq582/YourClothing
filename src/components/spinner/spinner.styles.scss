@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .spinner-contaienr {
+    .spinner-container {
+        display: inline-block;
         width: 50px;
         height: 50px;
         border: 3px solid rgba(195, 195, 195, 0.6);
