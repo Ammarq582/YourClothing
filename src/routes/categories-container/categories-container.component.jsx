@@ -13,7 +13,7 @@ const CategoriesContainer = () => {
             {
                 categoriesIsLoading
                 ?
-                <div> <Spinner/></div>
+                <Spinner/>
                 :
                 Object.keys(categoriesMap).map(title => {
                 const products = categoriesMap[title];
